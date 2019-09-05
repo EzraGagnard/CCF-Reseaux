@@ -1,0 +1,10 @@
+Code	Epreuve	lib court	Discipl	Cat autoris	Tri	format	Chrono	Vent	Tts Cat	Nb perf classante	Ajustement	Ordre	Modifiable	Codes appel des Epreuve combin?s	Distance	Type de record
+261	10 Km Route	10Km	Fo	CMCFJMJFEMEFSMSFVMVF	C	xx'xx'' 	M	0	N	20		71	Non		10000	Mp
+265	15 Km Route	15Km	Fo	CMCFJMJFEMEFSMSFVMVF	C	xhxx'xx'' 	M	0	N	21		73	Non		15000	Mp
+269	20 Km Route	20Km	Fo	JMJFEMEFSMSFVMVF	C	xhxx'xx'' 	M	0	N	22		75	Non		20000	Mp
+271	1/2 Marathon	semi	Fo	JMJFEMEFSMSFVMVF	C	xhxx'xx'' 	M	0	N	23		77	Non		21100	Mp
+275	25 Km Route	25Km	Fo	JMJFEMEFSMSFVMVF	C	xhxx'xx''	M	0	N	24		80	Non		25000	Mp
+295	Marathon	Marath	Fo	EMEFSMSFVMVF	C	xhxx'xx'' 	M	0	N	28		82	Non		42195	Mp
+296	Ekiden	Ekiden	Fo	CMCFJMJFEMEFSMSFVMVF	C	xhxx'xx'' 	M	0	N	28		84	Non			Mp
+298	24 Heures	24h	Fo	EMEFSMSFVMVF	D	xxxkxxxm 	0	N	29		86	Non		240000	Mp
+299	100 Km Route	100Km	Fo	EMEFSMSFVMVF	C	xxhxx'xx'' 	M	0	N	29		88	Non		100000	Mp

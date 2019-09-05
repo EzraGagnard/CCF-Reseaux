@@ -1,0 +1,69 @@
+Router>en
+Router#conf t
+Router(config)#ho R3
+R3(config)#exit
+R3#
+R3#conf t
+R3(config)#int s0/0/0
+R3(config-if)#ip address 10.100.100.9 255.255.255.252
+R3(config-if)#no shut
+R3(config-if)#exit
+R3(config-if)#ip address 10.100.100.6 255.255.255.252
+R3(config-if)#no shut
+R3(config-if)#exit
+R3(config)#int g0/0
+R3(config-if)#ip address 192.168.5.1 255.255.255.0
+R3(config-if)#no shut
+R3(config-if)#exit
+R3(config)#int g0/1
+R3(config-if)#ip address 192.168.6.1 255.255.255.0
+R3(config-if)#no shut
+R3(config-if)#exit
+R3(config)#
+R3(config)#ip route 192.168.4.0 255.255.255.0 10.100.100.5
+R3(config)#ip route 192.168.4.0 255.255.255.0 10.100.100.5
+R3(config)#ip route 192.168.3.0 255.255.255.0 10.100.100.10
+R3(config)#ip route 192.168.2.0 255.255.255.0 10.100.100.10
+R3(config)#ip route 0.0.0.0 0.0.0.0 10.100.100.5
+R3(config)#ip route 0.0.0.0 0.0.0.0 10.100.100.10 5
+R3(config)#exit
+
+R3#show ip interface brief 
+Interface                  IP-Address      OK? Method Status                Protocol
+Embedded-Service-Engine0/0 unassigned      YES unset  administratively down down    
+GigabitEthernet0/0         192.168.5.1     YES manual up                    up      
+GigabitEthernet0/1         192.168.6.1     YES manual up                    up      
+Serial0/0/0                10.100.100.9    YES manual up                    up      
+Serial0/0/1                10.100.100.6    YES manual up                    up      
+
+R3#show ip route static 
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override
+
+Gateway of last resort is 10.100.100.5 to network 0.0.0.0
+
+S*    0.0.0.0/0 [1/0] via 10.100.100.5
+S     192.168.1.0/24 [1/0] via 10.100.100.10
+S     192.168.2.0/24 [1/0] via 10.100.100.10
+S     192.168.3.0/24 [1/0] via 10.100.100.5
+S     192.168.4.0/24 [1/0] via 10.100.100.5
+
+R3#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone, 
+                  D - Remote, C - CVTA, M - Two-port Mac Relay 
+
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+SW5              Gig 0/0           131              S I   WS-C2960+ Fas 0/23
+Switch           Gig 0/1           168              S I   WS-C2960+ Fas 0/23
+r2               Ser 0/0/1         150            R B S I CISCO1941 Ser 0/0/0
+R1               Ser 0/0/0         161            R B S I CISCO1941 Ser 0/0/1
+
+Total cdp entries displayed : 4

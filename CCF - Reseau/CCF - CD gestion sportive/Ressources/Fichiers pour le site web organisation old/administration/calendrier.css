@@ -1,0 +1,115 @@
+
+  /* style pour le calendrier  */
+
+.ds_box {
+	background-color: #FFF;
+	border: 1px outset;
+	position: absolute;
+	z-index: 32767;
+}
+
+.ds_tbl {
+	background-color: #FFF;
+}
+
+.ds_head {
+	background-color: #374375;
+	color: #FFF;
+	font-family: Tahoma,Helvetica,sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.ds_titre {
+	background-color: #374375;
+	/*background-image:url(../images/menu_01.jpg); */
+	color: #FFF;
+	font-family:Arial,Helvetica,sans-serif;
+        font-size:20px;
+        font-weight:bold;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.ds_subhead {
+	background-color: #9396E1;
+	color: #000;
+	font-size: 11px;
+        font-weight:normal;
+	text-align: center;
+	font-family: Tahoma,Helvetica,sans-serif;
+	width: 32px;
+}
+
+.ds_cell {
+	background-color: #C7C8FC;
+	color: #000;
+	font-size:15px;
+        font-weight:bold;
+        padding: 3px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	border-top:1px solid #ddd;
+        border-right:1px solid #ddd;
+	cursor: pointer;
+}
+
+.ds_cell_v {
+	background-color: #03A300;;
+	color: #FFF;
+	font-size:15px;
+        font-weight:bold;
+        padding: 3px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	border-top:1px solid #ddd;
+        border-right:1px solid #ddd;
+	cursor: pointer;
+}
+
+.ds_cell_j {
+	background-color: #FBA807;;
+	color: #FFF;
+	font-size:15px;
+        font-weight:bold;
+        padding: 3px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	border-top:1px solid #ddd;
+        border-right:1px solid #ddd;
+	cursor: pointer;
+}
+
+.ds_cell_vide {
+	background-color: #C7C8FC;
+	color: #AAA;
+	font-size:15px;
+        font-weight:bold;
+        padding: 3px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	border-top:1px solid #ddd;
+        border-right:1px solid #ddd;
+
+}
+
+
+.ds_cell_iso {
+	background-color: #C7C8FC;
+	color: #888;
+	font-size:12px;
+        font-weight:bold;
+        padding: 3px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	border-top:1px solid #ddd;
+        border-right:1px solid #ddd;
+
+}
+
+.ds_cell:hover {
+	background-color: #F3F3F3;
+} 
+

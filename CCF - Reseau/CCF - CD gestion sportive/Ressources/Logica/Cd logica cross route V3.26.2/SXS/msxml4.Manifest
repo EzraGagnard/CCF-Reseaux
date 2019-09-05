@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Filename: MsXml4.Manifest -->
+<!-- Description: MSXML 4.0 SP2 Component Manifest -->
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+
+    <assemblyIdentity type="win32" name="Microsoft.MSXML2" version="4.20.9818.0" processorArchitecture="x86" publicKeyToken="6bd6b9abf345378f"/>
+
+    <file name="msxml4.dll" hash="80e5fb356b5f5cfe6f765a9ffe1eb749642a2e0f" hashalg="SHA1">
+
+        <typelib tlbid="{f5078f18-c551-11d3-89b9-0000f81fe221}" version="4.0" helpdir=""/>
+
+        <comClass description="W3C-DOM XML Document (Apartment)" clsid="{88d969c0-f192-11d4-a65f-0040963251e5}" threadingModel="Apartment" progid="MSXML2.DOMDocument.4.0" tlbid="{f5078f18-c551-11d3-89b9-0000f81fe221}"/>
+
+        <comClass description="W3C-DOM XML Document (Free threaded)" clsid="{88d969c1-f192-11d4-a65f-0040963251e5}" threadingModel="Free" progid="MSXML2.FreeThreadedDOMDocument.4.0" tlbid="{f5078f18-c551-11d3-89b9-0000f81fe221}"/>
+
+        <comClass description="Object for caching schemas" clsid="{88d969c2-f192-11d4-a65f-0040963251e5}" threadingModel="Free" progid="MSXML2.XMLSchemaCache.4.0" tlbid="{f5078f18-c551-11d3-89b9-0000f81fe221}"/>
+
+        <comClass description="Object for caching compiled XSL stylesheets" clsid="{88d969c3-f192-11d4-a65f-0040963251e5}" threadingModel="Free" progid="MSXML2.XSLTemplate.4.0" tlbid="{f5078f18-c551-11d3-89b9-0000f81fe221}"/>
+
+        <comClass description="XML Data Source Object" clsid="{88d969c4-f192-11d4-a65f-0040963251e5}" threadingModel="Apartment" progid="MSXML2.DSOControl.4.0" tlbid="{f5078f18-c551-11d3-89b9-0000f81fe221}"/>
+
+        <comClass description="XML HTTP Request class." clsid="{88d969c5-f192-11d4-a65f-0040963251e5}" threadingModel="Apartment" progid="MSXML2.XMLHTTP.4.0" tlbid="{f5078f18-c551-11d3-89b9-0000f81fe221}"/>
+
+        <comClass description="Server XML HTTP Request class." clsid="{88d969c6-f192-11d4-a65f-0040963251e5}" threadingModel="Apartment" progid="MSXML2.ServerXMLHTTP.4.0" tlbid="{f5078f18-c551-11d3-89b9-0000f81fe221}"/>
+
+        <comClass description="SAX XML Reader 4.0 coclass" clsid="{7c6e29bc-8b8b-4c3d-859e-af6cd158be0f}" threadingModel="Both" progid="MSXML2.SAXXMLReader.4.0" tlbid="{f5078f18-c551-11d3-89b9-0000f81fe221}"/>
+
+        <comClass description="Microsoft XML Writer 4.0 coclass" clsid="{88d969c8-f192-11d4-a65f-0040963251e5}" threadingModel="Both" progid="MSXML2.MXXMLWriter.4.0" tlbid="{f5078f18-c551-11d3-89b9-0000f81fe221}"/>
+
+        <comClass description="Microsoft HTML Writer 4.0 coclass" clsid="{88d969c9-f192-11d4-a65f-0040963251e5}" threadingModel="Both" progid="MSXML2.MXHTMLWriter.4.0" tlbid="{f5078f18-c551-11d3-89b9-0000f81fe221}"/>
+
+        <comClass description="SAX Attributes 4.0 coclass" clsid="{88d969ca-f192-11d4-a65f-0040963251e5}" threadingModel="Both" progid="MSXML2.SAXAttributes.4.0" tlbid="{f5078f18-c551-11d3-89b9-0000f81fe221}"/>
+
+        <comClass description="MX Namespace Manager 4.0 coclass" clsid="{88d969d6-f192-11d4-a65f-0040963251e5}" threadingModel="Both" progid="MSXML2.MXNamespaceManager.4.0" tlbid="{f5078f18-c551-11d3-89b9-0000f81fe221}"/>
+
+    </file>
+
+    <dependency>
+        <dependentAssembly>
+            <assemblyIdentity type="win32" name="Microsoft.MSXML2R" version="4.1.0.0" processorArchitecture="x86" publicKeyToken="6bd6b9abf345378f"/>
+        </dependentAssembly>
+    </dependency>
+
+
+</assembly>
